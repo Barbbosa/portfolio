@@ -1,0 +1,184 @@
+
+/*importando fontes de letras*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+/*Definindo tamanho de elementos para cada tipo de dispositivo*/
+@media screen and (max-width: 600px) {
+  .logo,
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropcontent {
+    display: none;
+  }
+
+  .dropdown {
+    margin: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .hardimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width:601px){
+  .dropcontent{
+    display: none;
+  }
+  .dropdown{
+    display: none;
+  }
+}
+
+/*incorporar margin e padding */
+*{
+  box-sizing: border-box;
+  font-family: "Source Serif 4", serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+/*Estilizando barra de navegação e header*/
+body{
+  background:#ffffff;
+  margin: 0%;
+}
+
+.navbar{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff72;
+  display:flex;
+  align-items: center;
+}
+h1{
+  color: #5a0101;
+}
+.logo{
+  color: #5a0101;
+  flex: 20%;
+  text-align: left;
+  font-family: "Abril Fatface", serif;
+  font-weight: 500;
+  margin-left: 10%;
+}
+.logo a{
+  color: #5a0101;
+}
+.menu a{
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  flex:80%;
+  text-align: right;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+.menu a:hover{
+ 
+  border-top: 3px solid rgb(248, 45, 45);
+}
+#botão{
+  background:rgb(156, 5, 5);
+  padding: 8px 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+#botão:hover{
+  border: none;
+  background: rgb(167, 10, 10);
+}
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.headline{
+  margin-left:10%;
+  flex:40%;
+  
+}
+.img-headline{
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+.headline h2{
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(121, 4, 4);
+}
+p{
+  color: rgb(121, 4, 4);
+  text-align: left;
+}
+.redes{
+  display: flex;
+  margin-left: 15px;
+}
+
+.redes img{
+  display: block;
+  max-width: 30px;
+}
+.redes:hover{
+  border-radius: 3px;
+  box-shadow: 0px 2px 30px rgb(189, 11, 11)
+}
+
+/*estilização da pagina sobre*/
+.about{
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 80px;
+  text-align: justify;
+}
+h3{
+  display: flex;
+  justify-content: center;
+  color: rgb(121, 4, 4);
+  
+}
+.vida-pessoal,.vida-profissional{
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(142, 133, 133, 0.63);
+  border-radius: 20px;
+
+}
+.eu{
+  max-width: 150px;
+  float: left;
+  border-radius: 10px;
+}
+
+p{
+  text-align: justify;
+}
+.vida-pessoal:hover,
+.vida-profissional:hover{
+  box-shadow: 0px 0px 30px rgba(37, 27, 27, 0.63);
+  border-radius: 20px;
+}
+
+/*Hardsills*/
+.hardimg{
+  display: flex;
+  gap: 8%;
+  justify-content: center;
+  margin-bottom: 100px;
+}
