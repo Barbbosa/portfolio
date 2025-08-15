@@ -4,27 +4,15 @@
 
 
 /*Definindo tamanho de elementos para cada tipo de dispositivo*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .logo,
   h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
-
-  .dropcontent {
+  .menu{
     display: none;
   }
 
-  .dropdown {
-    margin: 20px;
-  }
-
-  .menu {
-    display: none;
-  }
-  .about{
-    display: flex;
-    flex-direction: column;
   }
   .hardimg{
     display: flex;
@@ -32,15 +20,20 @@
     align-items: center;
     gap: 30px;
   }
+  .projetosgeral{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@media screen and (min-width:601px){
+
+@media screen and (min-width:601px) and max{
   .dropcontent{
     display: none;
   }
   .dropdown{
     display: none;
-  }
 }
+} */
 
 /*incorporar margin e padding */
 *{
@@ -123,7 +116,6 @@ h1{
 }
 p{
   color: rgb(121, 4, 4);
-  text-align: left;
 }
 .redes{
   display: flex;
@@ -166,9 +158,6 @@ h3{
   border-radius: 10px;
 }
 
-p{
-  text-align: justify;
-}
 .vida-pessoal:hover,
 .vida-profissional:hover{
   box-shadow: 0px 0px 30px rgba(37, 27, 27, 0.63);
@@ -182,3 +171,35 @@ p{
   justify-content: center;
   margin-bottom: 100px;
 }
+
+/*Projetos*/
+.projetosgeral{
+  display: flex;
+  margin-left: 10%;
+  margin-right:10% ;
+  gap: 20px;
+}
+.projectsp1{
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+.projectsp2{
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+.projeto1,.projeto2,.projeto3{
+  margin-top:20px;
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 3px 15px red;
+}
+
+.imgprj1{
+  max-width: 300px;
+  border-radius: 8px;
+}
+
