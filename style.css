@@ -177,7 +177,7 @@ h3{
   display: flex;
   margin-left: 10%;
   margin-right:10% ;
-  gap: 20px;
+  gap: 50px;
 }
 .projectsp1{
   text-align: center;
@@ -190,12 +190,15 @@ h3{
   margin: 0;
 }
 
-.projeto1,.projeto2,.projeto3{
+.projeto1{
   margin-top:20px;
   max-width: 300px;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 1px 3px 15px red;
+  box-shadow: 1px 3px 15px rgb(116, 32, 32);
+}
+.projeto1:hover{
+  box-shadow: 1px 6px 20px rgb(207, 31, 31);
 }
 
 .imgprj1{
